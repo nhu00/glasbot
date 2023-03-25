@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Recycling Matching</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="css/rpmatch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+
+<!--HEADER/NAVBAR-->
+<header id="header">    
+<div class="nav">    
+    <nav>
+    <div id="leftnav">
+        <ul>
+            <li>
+                <img id="logo" src="img/logo.png" alt="Glasbot">
+            </li>
+            <li class="glasbot">
+                <a href="index.html">Glasbot</a>
+            </li>
+        </ul>
+    </div>
+        
+    <div id="rightnav">
+        <ul>
+            <li>
+                <a href="activities.html">Class Activites</a>
+            </li>
+            <li>
+                <a class="zoom" href="about.html">About Glasbot</a>
+            </li>
+        </ul>
+    </div>    
+    </nav>  
+</div>    
+</header>  
+    
+<body>
+    <section id="match">
+        
+        <h1>Recycling Progress - Matching Card</h1><br>
+        
+        <div id="holder">
+            
+            <div id="Playfield">
+            </div>
+            
+            <div id="turns">
+                 <p id="pturns">Turns: </p>
+                <span></span>
+            </div>
+            
+            <div id="slideshow"></div>
+            
+            <div class="finished">
+                <br>
+                <h2><span></span></h2><br>
+            
+                <h3>Do you want to try again?</h3>
+                
+                <div class="restart">
+                    <a href="fpmatch.html">
+                        <i class="fas fa-sync fa-spin" style="font-size:30px; color:#fff; --fa-animation-duration: 5s;"></i>
+                    </a>
+                </div><br>
+                
+            </div>
+            
+        </div>
+        
+    </section> 
+    <script src="js/match.js"></script>
+</body>
+
+<footer>
+    &copy; Copyright 2023, Glasbot
+</footer>    
+
+</html>
