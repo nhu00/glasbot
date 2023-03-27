@@ -20,7 +20,7 @@ window.onload = function() {
             }
 
             function playInitialMenu() {
-                playVideo(videosContainer.getElementsByClassName("initial")[0], loop=false);
+                playVideo(videosContainer.getElementsByClassName("initial")[0], loop=true);
 
                 setTimeout (function () {
                     menu.style.display = "block";
@@ -30,7 +30,7 @@ window.onload = function() {
             };
 
             function playClosingMenu() {
-                playVideo(videosContainer.getElementsByClassName("closing")[0], loop=false);
+                playVideo(videosContainer.getElementsByClassName("closing")[0], loop=true);
 
                 menu.getElementsByClassName("initial")[0].style.display = "none";
 
@@ -53,6 +53,7 @@ window.onload = function() {
                 video.preload = "auto";
                 video.load();
                 video.play();
+                video.loop = loop;
 
                 return video;
             }
